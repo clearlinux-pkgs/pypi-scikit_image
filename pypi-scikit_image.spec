@@ -4,7 +4,7 @@
 #
 Name     : pypi-scikit_image
 Version  : 0.19.1
-Release  : 69
+Release  : 70
 URL      : https://files.pythonhosted.org/packages/e7/54/4b57761f25be6e2536130ca3bc8742dee45bb9047c5df798197203220e37/scikit-image-0.19.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/e7/54/4b57761f25be6e2536130ca3bc8742dee45bb9047c5df798197203220e37/scikit-image-0.19.1.tar.gz
 Summary  : Image processing in Python
@@ -14,25 +14,17 @@ Requires: pypi-scikit_image-bin = %{version}-%{release}
 Requires: pypi-scikit_image-license = %{version}-%{release}
 Requires: pypi-scikit_image-python = %{version}-%{release}
 Requires: pypi-scikit_image-python3 = %{version}-%{release}
-Requires: Pillow
-Requires: PyWavelets
-Requires: cloudpickle
-Requires: dask
-Requires: imageio
-Requires: matplotlib
-Requires: networkx
-Requires: scipy
-BuildRequires : Cython
-BuildRequires : Pillow
-BuildRequires : PyWavelets
+Requires: pypi(cloudpickle)
+Requires: pypi(dask)
+Requires: pypi(imageio)
+Requires: pypi(matplotlib)
+Requires: pypi(networkx)
+Requires: pypi(pillow)
+Requires: pypi(pywavelets)
+Requires: pypi(scipy)
 BuildRequires : buildreq-distutils3
-Provides: scikit-image
-Provides: scikit-image-python
-Provides: scikit-image-python3
-BuildRequires : dask
-BuildRequires : networkx
-BuildRequires : numpy
 BuildRequires : pypi(cython)
+BuildRequires : pypi(dask)
 BuildRequires : pypi(imageio)
 BuildRequires : pypi(networkx)
 BuildRequires : pypi(numpy)
@@ -40,11 +32,12 @@ BuildRequires : pypi(packaging)
 BuildRequires : pypi(pillow)
 BuildRequires : pypi(pythran)
 BuildRequires : pypi(pywavelets)
+BuildRequires : pypi(scikit_learn)
 BuildRequires : pypi(scipy)
 BuildRequires : pypi(setuptools)
 BuildRequires : pypi(tifffile)
 BuildRequires : pypi(wheel)
-BuildRequires : scikit-learn
+BuildRequires : pypi-cython
 
 %description
 # scikit-image: Image processing in Python
@@ -106,7 +99,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641493881
+export SOURCE_DATE_EPOCH=1641668948
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -Ofast -falign-functions=32 -fno-lto -fno-semantic-interposition -mno-vzeroupper -mprefer-vector-width=256 "
 export FCFLAGS="$FFLAGS -Ofast -falign-functions=32 -fno-lto -fno-semantic-interposition -mno-vzeroupper -mprefer-vector-width=256 "
