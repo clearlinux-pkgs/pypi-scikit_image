@@ -4,7 +4,7 @@
 #
 Name     : pypi-scikit_image
 Version  : 0.19.1
-Release  : 70
+Release  : 71
 URL      : https://files.pythonhosted.org/packages/e7/54/4b57761f25be6e2536130ca3bc8742dee45bb9047c5df798197203220e37/scikit-image-0.19.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/e7/54/4b57761f25be6e2536130ca3bc8742dee45bb9047c5df798197203220e37/scikit-image-0.19.1.tar.gz
 Summary  : Image processing in Python
@@ -99,7 +99,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641668948
+export SOURCE_DATE_EPOCH=1642368857
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -Ofast -falign-functions=32 -fno-lto -fno-semantic-interposition -mno-vzeroupper -mprefer-vector-width=256 "
 export FCFLAGS="$FFLAGS -Ofast -falign-functions=32 -fno-lto -fno-semantic-interposition -mno-vzeroupper -mprefer-vector-width=256 "
