@@ -1,5 +1,5 @@
 PKG_NAME := pypi-scikit_image
-URL = https://files.pythonhosted.org/packages/83/7d/756dcbf1f2fcbfd60e14842aeadefa2354eff714ed4ec3ae7a107a5787d1/scikit-image-0.19.2.tar.gz
+URL = https://files.pythonhosted.org/packages/00/d4/6682033d02917b10a2024dbe5a0636d2338b0799f7bd1885508fb114aec9/scikit-image-0.19.3.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
