@@ -4,7 +4,7 @@
 #
 Name     : pypi-scikit_image
 Version  : 0.19.3
-Release  : 80
+Release  : 81
 URL      : https://files.pythonhosted.org/packages/00/d4/6682033d02917b10a2024dbe5a0636d2338b0799f7bd1885508fb114aec9/scikit-image-0.19.3.tar.gz
 Source0  : https://files.pythonhosted.org/packages/00/d4/6682033d02917b10a2024dbe5a0636d2338b0799f7bd1885508fb114aec9/scikit-image-0.19.3.tar.gz
 Summary  : Image processing in Python
@@ -124,7 +124,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1656406410
+export SOURCE_DATE_EPOCH=1666709597
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -Ofast -falign-functions=32 -fno-lto -fno-semantic-interposition -mprefer-vector-width=256 "
 export FCFLAGS="$FFLAGS -Ofast -falign-functions=32 -fno-lto -fno-semantic-interposition -mprefer-vector-width=256 "
@@ -143,16 +143,18 @@ python3 -m build --wheel --skip-dependency-check --no-isolation
 popd
 
 %check
+export LANG=C.UTF-8
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 #make test
+
 %install
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/pypi-scikit_image
-cp %{_builddir}/scikit-image-0.19.3/LICENSE.txt %{buildroot}/usr/share/package-licenses/pypi-scikit_image/9c5c45c8433b83e2ac82898a64d41746dec6f2fc
-cp %{_builddir}/scikit-image-0.19.3/doc/tools/LICENSE.txt %{buildroot}/usr/share/package-licenses/pypi-scikit_image/fb50fd87a0153fd93be5975f012fa41347306040
+cp %{_builddir}/scikit-image-%{version}/LICENSE.txt %{buildroot}/usr/share/package-licenses/pypi-scikit_image/9c5c45c8433b83e2ac82898a64d41746dec6f2fc || :
+cp %{_builddir}/scikit-image-%{version}/doc/tools/LICENSE.txt %{buildroot}/usr/share/package-licenses/pypi-scikit_image/fb50fd87a0153fd93be5975f012fa41347306040 || :
 pip install --root=%{buildroot} --no-deps --ignore-installed dist/*.whl
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
