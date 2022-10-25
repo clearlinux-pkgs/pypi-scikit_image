@@ -4,7 +4,7 @@
 #
 Name     : pypi-scikit_image
 Version  : 0.19.3
-Release  : 79
+Release  : 80
 URL      : https://files.pythonhosted.org/packages/00/d4/6682033d02917b10a2024dbe5a0636d2338b0799f7bd1885508fb114aec9/scikit-image-0.19.3.tar.gz
 Source0  : https://files.pythonhosted.org/packages/00/d4/6682033d02917b10a2024dbe5a0636d2338b0799f7bd1885508fb114aec9/scikit-image-0.19.3.tar.gz
 Summary  : Image processing in Python
