@@ -4,12 +4,12 @@
 #
 Name     : pypi-scikit_image
 Version  : 0.20.0
-Release  : 83
+Release  : 84
 URL      : https://files.pythonhosted.org/packages/03/55/0ff6e41c39c64d9ad18bf31c953c28f525533609c7371fa2790558ca8197/scikit_image-0.20.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/03/55/0ff6e41c39c64d9ad18bf31c953c28f525533609c7371fa2790558ca8197/scikit_image-0.20.0.tar.gz
 Summary  : Image processing in Python
 Group    : Development/Tools
-License  : * MIT
+License  : MIT
 Requires: pypi-scikit_image-filemap = %{version}-%{release}
 Requires: pypi-scikit_image-lib = %{version}-%{release}
 Requires: pypi-scikit_image-license = %{version}-%{release}
@@ -117,7 +117,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1678730523
+export SOURCE_DATE_EPOCH=1678731068
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -Ofast -falign-functions=32 -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -fno-semantic-interposition -g1 -gno-column-info -gno-variable-location-views -gz "
 export FCFLAGS="$FFLAGS -Ofast -falign-functions=32 -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -fno-semantic-interposition -g1 -gno-column-info -gno-variable-location-views -gz "
