@@ -7,3 +7,5 @@ pypi(dask)
 pypi(networkx)
 pypi(numpy)
 pypi(scikit_learn)
+pypi(pythran)
+pypi-pythran
