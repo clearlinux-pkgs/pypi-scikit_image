@@ -7,7 +7,7 @@
 #
 Name     : pypi-scikit_image
 Version  : 0.22.0
-Release  : 86
+Release  : 87
 URL      : https://files.pythonhosted.org/packages/65/c1/a49da20845f0f0e1afbb1c2586d406dc0acb84c26ae293bad6d7e7f718bc/scikit_image-0.22.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/65/c1/a49da20845f0f0e1afbb1c2586d406dc0acb84c26ae293bad6d7e7f718bc/scikit_image-0.22.0.tar.gz
 Summary  : Image processing in Python
